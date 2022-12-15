@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+img#coche1 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+img#coche2 {
+    position: absolute;
+    margin-top: 80px;
+    width: 100px;
+    height: 100px;
+}
+
+.zona_boton {
+    margin-left: 50%;
+    width: 100%;
+    margin-top: 240px;
+    display: flex;
+}
+  
+  .principal {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  img {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+  }
+  
+  #felicidades {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5vw;
+  
+   
+    display: flex;
+    position: absolute;
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin-bottom: 50vh;
+    color: white;
+    font-size: 2em;
+    font-style: italic;
+    text-shadow: 0px 2px black;
+    visibility: hidden;
+  }
+
+  
+  #nombre {
+    display: flex;
+    position: absolute;
+    width: auto;
+    height: auto;
+    margin-bottom: 60vh;
+    text-align: center;
+    visibility: hidden;
+}
+
+
+@keyframes dos {
+    from {
+        margin-left: 100%;
+        width: 100%;
+        color:red;
+    }
+    
+    50% {
+        font-size: 300%;
+        color:yellow;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+        color:blue;
+    }
+}
+
+  @media(orientation:landscape) {
+    .principal {
+      width: 40vw;
+    }
+  
+  
+  }
